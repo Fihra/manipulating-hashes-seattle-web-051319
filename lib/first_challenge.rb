@@ -17,7 +17,7 @@ def first_challenge
   contacts.each do |key, data|
     data.each do |attribute, value|
       if attribute == :favorite_icecream_flavors
-        contacts["Freddy Mercury"][:favorite_icecream_flavors].pop("strawberry")
+        value.delete("strawberry")
       end
     end
   end
